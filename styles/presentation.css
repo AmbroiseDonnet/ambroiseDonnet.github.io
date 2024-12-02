@@ -1,0 +1,26 @@
+#presentation {
+    display: flex;
+    align-content: space-around;
+    height: 80vh;
+}
+
+#presentation h3 {
+    margin-left: 10%;
+}
+
+
+#presentation p{
+    padding-top: 30px;
+}
+
+.presentation-texte > .left {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 25%
+}
+.presentation-texte > .right {
+    text-align: justify;
+    text-align-last: right;
+    margin-left: 25%;
+    margin-right: 10%;
+}

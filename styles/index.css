@@ -65,13 +65,13 @@ header a:hover {
   font-weight: bold;
   transform: scale(1.3);
   color: #FFF3B0;
-  z-index: 10; /* Assure que le lien reste au-dessus des autres */
+  z-index: 10;
 }
 
 section {
-  height: 105vh;
+  height: 100vh;
   min-height: 92vh;
-  padding-top: 8vh;
+  padding-top: 8.5vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -79,6 +79,10 @@ section {
 }
 
 section h2 {
-
+  border: black solid 1px;
+  border-radius: 10px;
+  background: #446A88;
+  padding: 10px;
+  color: #C1801F;
 }
 
