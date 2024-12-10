@@ -78,11 +78,33 @@ section {
   align-items: center;
 }
 
+.titre-section {
+padding-top: 5px;
+}
+
+
 section h2 {
-  border: black solid 1px;
+  border: black solid 3px;
   border-radius: 10px;
   background: #446A88;
   padding: 10px;
   color: #C1801F;
 }
+
+/* Couleur des arrières plans : */
+
+body {
+  background-color: #FAFAFA;
+}
+
+.color1 {
+  background-color: #c5c5c5;
+}
+
+.color2 {
+  background-color: #C1801F;
+}
+
+
+
 

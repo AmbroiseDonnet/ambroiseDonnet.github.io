@@ -1,22 +1,28 @@
-#presentation {
+.presentation-texte {
     display: flex;
-    align-content: space-around;
-    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
-#presentation h3 {
+.presentation-texte h3 {
     margin-left: 10%;
 }
 
 
-#presentation p{
-    padding-top: 30px;
+.presentation-texte p{
+    margin-top: 30px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: #446A88;
 }
 
 .presentation-texte > .left {
     text-align: justify;
     margin-left: 10%;
-    margin-right: 25%
+    margin-right: 25%;
 }
 .presentation-texte > .right {
     text-align: justify;
