@@ -1,42 +1,3 @@
-.columns {
-    display: flex;
-    gap: 20px; /* Espacement entre les colonnes */
-    justify-content: space-between; /* Espace équilibré entre les colonnes */
-    max-width: 1200px; /* Largeur maximale pour les colonnes */
-    margin: 0 auto; /* Centrer les colonnes */
-}
-
-.column {
-    flex: 1; /* Chaque colonne occupe la même largeur */
-    padding: 0 10px; /* Espacement interne */
-    max-height: 300px; /* Hauteur maximale des colonnes */
-    overflow: hidden; /* Masque le contenu qui dépasse */
-}
-
-article {
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px; /* Espacement entre les articles */
-    max-height: 150px; /* Hauteur maximale des articles */
-    overflow: hidden; /* Masque le contenu qui dépasse */
-    text-overflow: ellipsis; /* Ajoute des points de suspension pour le texte trop long */
-    white-space: nowrap; /* Empêche le retour à la ligne */
-}
-
-article h3 {
-    margin: 0 0 10px;
-    font-size: 18px; /* Ajoute des points de suspension au titre trop long */
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    overflow: clip; /* Masque le texte qui dépasse */
-}
-
-
-.column.left,
-.column.right {
-    text-align: center; /* Centre le contenu pour un rendu équilibré */
-}
 
 #hard-skill ul {
     list-style: none;
@@ -45,17 +6,16 @@ article h3 {
     display: flex;
     overflow: hidden;
     position: relative;
-    width: 100%; /* Le carrousel prend la largeur disponible */
-    height: 50px; /* Ajustez selon vos besoins */
+    width: 100%;
+    height: 50px;
 }
 
 #hard-skill ul li {
     flex: 0 0 auto;
     padding: 10px 20px;
     margin: 0 5px;
-    background-color: #eee;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px;
     white-space: nowrap;
     font-size: 16px;
 }
@@ -70,10 +30,10 @@ article h3 {
 }
 
 #hard-skill ul.scrolling {
-    animation: scroll 30s linear infinite; /* Ajuste la durée pour un défilement fluide */
+    animation: scroll 30s linear infinite;
     display: flex;
 }
 
 #hard-skill ul.scrolling:hover {
-    animation-play-state: paused; /* Pause l'animation au survol */
+    animation-play-state: paused;
 }

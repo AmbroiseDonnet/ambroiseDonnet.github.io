@@ -9,14 +9,12 @@
     margin-left: 10%;
 }
 
-
 .presentation-texte p{
     margin-top: 30px;
     border-style: solid;
     padding: 5px;
     border-radius: 10px;
     border-width: 2px;
-    background-color: #446A88;
 }
 
 .presentation-texte > .left {
