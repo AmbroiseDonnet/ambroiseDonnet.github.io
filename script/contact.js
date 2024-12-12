@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const footer = document.querySelector('footer');
-    const lastSection = document.querySelector('#loisirs'); // Change selon ton ID de dernière section
+    const lastSection = document.querySelector('#loisirs');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.5 // Définit combien de la section doit être visible (50% ici)
+        threshold: 0.9
     });
 
     observer.observe(lastSection);

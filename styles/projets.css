@@ -1,0 +1,162 @@
+#projets forall {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+/* Conteneur général des carrousels */
+.carousels-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Style des carrousels */
+.carousel-wrapper {
+    flex: 1;
+    text-align: center;
+}
+
+/* Conteneur principal du carrousel */
+.carousel {
+    position: relative; /* Permet de positionner les flèches */
+    width: 35vw; /* Largeur du carrousel, ajustable */
+    height: 40vh;
+    margin: auto; /* Centrage horizontal */
+    overflow: hidden; /* Cache les éléments hors de la zone visible */
+    border: 2px solid #333; /* Ajoute une bordure pour mieux visualiser */
+    border-radius: 10px; /* Un peu d'arrondi pour l'esthétique */
+    background-color: #fff; /* Fond blanc pour contraster */
+}
+
+/* Conteneur des éléments du carrousel */
+.carousel-items {
+    display: flex; /* Aligne les éléments horizontalement */
+    transition: transform 0.5s ease-in-out; /* Animation fluide */
+    width: 100%; /* Évite les décalages */
+    height: 100%;
+    align-items: center;
+}
+
+/* Chaque élément du carrousel */
+.carousel-item {
+    flex: 0 0 100%; /* Chaque élément occupe toute la largeur du carrousel */
+    box-sizing: border-box; /* Inclut padding et border dans la largeur */
+    text-align: center; /* Centre le texte */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Ligne entre les items */
+    background-color: #f9f9f9; /* Couleur de fond différente */
+    height: 100%;
+}
+
+/* Flèches de navigation */
+.carousel button {
+    position: absolute;
+    top: 50%; /* Centré verticalement */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2; /* Par-dessus les autres éléments */
+    font-size: 18px;
+    border-radius: 50%; /* Rendre les boutons circulaires */
+}
+
+/* Flèche gauche */
+.carousel .prev {
+    left: 10px; /* À gauche */
+}
+
+/* Flèche droite */
+.carousel .next {
+    right: 10px; /* À droite */
+}
+
+
+/* Boutons de navigation */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Séparateur vertical */
+.separator {
+    width: 0.5vw;
+    background-color: #ddd;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.carousel {
+    perspective: 1000px; /* Distance de la perspective */
+}
+
+/* Styles pour la carte */
+.card {
+    position: relative;
+    width: 90%; /* Ajuste la largeur pour un léger espace autour */
+    height: 200px; /* Ajuste la hauteur selon tes besoins */
+    margin: 0 auto; /* Centre la carte horizontalement */
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden; /* Évite que les contenus débordent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Face avant et arrière de la carte */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Occupe toute la hauteur disponible */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Face avant */
+.card-front {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Face arrière */
+.card-back {
+    background-color: #007BFF;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Effet au survol */
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card:hover .card-back {
+    transform-style: flat;
+    transition: transform 1s ease;
+    backface-visibility: visible;
+    transform: rotateY(180deg);
+}
+
+
+/* Conteneur du carrousel pour garantir la perspective */
+.carousel {
+    perspective: 1000px; /* Distance pour l'effet 3D */
+}
