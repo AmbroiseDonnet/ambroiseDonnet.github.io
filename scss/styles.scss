@@ -37,8 +37,10 @@ section {
     scroll-snap-align: none;
   }
   footer {
-    h2 {
-      font-size: 1rem;
+    div {
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -52,8 +54,10 @@ section {
   }
 
   footer {
-    h2 {
-      font-size: 2rem;
+    div {
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 }
