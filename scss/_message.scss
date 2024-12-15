@@ -1,0 +1,79 @@
+.message-box {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .messages {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--bg-article);
+    overflow-y: auto;
+    max-height: 400px;
+  }
+
+  .input-area {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--bg-body);
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      background-color: var(--bg-article);
+      color: var(--text-body);
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: var(--border-color);
+      color: var(--text-body);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: var(--text-main);
+        color: var(--bg-body);
+      }
+    }
+  }
+
+  .message {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--text-main);
+    color: var(--bg-body);
+    max-width: 75%;
+  }
+
+  .message.self {
+    align-self: flex-end;
+    background-color: var(--bg-body);
+    color: var(--text-body);
+  }
+
+  #message-input {
+    width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+    padding: 10px; /* Espace interne pour rendre l'écriture agréable */
+    font-size: 16px; /* Taille de texte confortable */
+    line-height: 1.5; /* Espacement entre les lignes */
+    resize: none; /* Empêche le redimensionnement manuel */
+    overflow: hidden; /* Masque les débordements */
+    border: 1px solid #ccc; /* Bordure classique */
+    border-radius: 5px; /* Coins arrondis */
+  }
+}

@@ -1,0 +1,29 @@
+body.clair {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.clair article {
+  background-color: #f8f9fa;
+  border: 1px solid #cccccc;
+  color: #333333;
+}
+
+body.fonce {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.fonce article {
+  background-color: #1f1f1f;
+  border: 1px solid #444444;
+  color: #ffffff;
+}
+
+body.izaya {
+  background-color: #2b2d42;
+  color: #d90429;
+}
+body.izaya article {
+  background-color: #8d99ae;
+  border: 1px solid #ef233c;
+  color: #edf2f4;
+}
