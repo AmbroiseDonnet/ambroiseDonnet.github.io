@@ -1,308 +1,228 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambroise Donnet</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/presentation.css">
-    <link rel="stylesheet" href="styles/hardSkill.css">
-    <link rel="stylesheet" href="styles/softSkills.css">
-    <link rel="stylesheet" href="styles/formations.css">
-    <link rel="stylesheet" href="styles/experience.css">
-    <link rel="stylesheet" href="styles/projets.css">
-    <link rel="stylesheet" href="styles/loisirs.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="icon" type="image/gif" href="res/racoon.gif">
-    <script src="script/carousselLanguage.js"></script>
-    <script src="script/contact.js"></script>
-    <script src="script/carousselProjet.js"></script>
+    <link rel="stylesheet" href="scss/styles.css">
+    <title>CV Numérique</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <nav>
-        <ul>
-            <li><a href="#hard-skill">Hard Skills</a></li>
-            <li><a href="#soft-skill">Soft Skills</a></li>
-            <li><a href="#formation">Formations</a></li>
-            <li><a href="#experience">Expériences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#loisirs">Loisirs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <h1><a href="#presentation">⬆ Ambroise Donnet</a></h1>
-</header>
-
-<section id="presentation" class="color1">
-    <h1>Ce site est en préparation. La version finale sera disponible le dimanche 15 décembre.</h1>
-    <h2 class="titre-section">Présentation</h2>
-    <div class="presentation-texte">
-        <h3>Bienvenue !</h3>
-        <p class="left">
-            Je m'appelle Ambroise Donnet, étudiant en 2ᵉ année de BUT Informatique à l’Université de Lille, sur le
-            campus de la Cité Scientifique à Villeneuve-d’Ascq. Curieux et motivé, je suis à la recherche d’une
-            alternance en tant que développeur informatique. J’aime explorer de nouvelles technologies et enrichir
-            mes compétences, que ce soit dans le cadre de mes études ou de projets personnels.
-        </p>
-        <p class="right">
-            Dans le cadre de ma formation, j’ai l’opportunité de réaliser un stage à l’étranger, une expérience qui
-            me permettra de développer mes capacités en anglais, bien que je sois au Québec, tout en découvrant
-            d’autres approches professionnelles.
-        </p>
-        <p class="left">
-            En dehors de mes études, je suis passionné par la natation et les jeux vidéo, et je travaille
-            comme animateur pendant les vacances. Ces activités m’ont appris à être à la fois créatif, organisé, et
-            à bien m’entendre avec des publics variés.
-        </p>
-    </div>
-</section>
-
-<section id="hard-skill" class="color2">
-    <h2>Compétences techniques</h2>
-    <article>
-        <h3>Systèmes d'exploitation</h3>
-        <img src="res/imgWindows" alt="Logo Windows">
-        <p>Je travaille personnellement dessus pendant mon temps libre.</p>
-        <img src="res/logoDebian.png" alt="Logo Debian">
-        <p>Je l'utilise principalement dans le cadre de ma formation.</p>
-    </article>
-    <article>
-        <h3>Outils</h3>
-        <img src="res/imgGit.png" alt="Logo Git">
-        <img src="res/logoVSCode.png" alt="Logo VSCode">
-        <img src="res/logoJetbrains.png" alt="Logo JetBrains">
-    </article>
-    <article>
-        <h3>Langues</h3>
-        <img src="res/drapAnglaiswebp.webp" alt="Drapeau anglais">
-        <p>Anglais - niveau B2</p>
-        <img src="res/drapAllemand.webp" alt="Drapeau allemand">
-        <p>Allemand - niveau A2</p>
-    </article>
-    <article class="languageprog">
-        <h3>Langages de programmation</h3>
-        <ul>
-            <li><img src="res/logo-html5.png" alt="Logo HTML 5"></li>
-            <li><img src="res/logo-css3.png" alt="Logo CSS"></li>
-            <li><img src="res/logojava.png" alt="Logo Java"></li>
-            <li><img src="res/logo/python.png" alt="Logo Python"></li>
-            <li><img src="res/logo/c.png" alt="Logo C"></li>
-            <li><img src="res/logo/csharp.png" alt="Logo C#"></li>
-        </ul>
-    </article>
-</section>
-
-<section id="soft-skill" class="color1">
-    <h2>Compétences personnelles</h2>
-    <article>
-        <h3>Travail d'équipe</h3>
-        <p>J'ai eu l'occasion de travailler en équipe sur de nombreux projets, tels que le jeu ludo-pédagogique
-            *Infinite Dungeons* avec la méthode Agile.</p>
-    </article>
-    <article>
-        <h3>Autonomie et improvisation</h3>
-        <p>Je suis tout autant capable d'improviser lorsque nécessaire. J'exerce ces compétences
-            principalement dans mes jobs étudiants en animation, où je dois m'adapter à chaque situation.
-            Par ailleurs, je sais me débrouiller seul, comme en m'autoformant sur C# et JavaScript pour ce CV.</p>
-    </article>
-    <article>
-        <h3>Créativité</h3>
-        <p>Je sais être créatif lorsque nécessaire, parfois même un peu trop en voulant dépasser mes objectifs.
-            J'exerce cette créativité en tant qu'animateur, où il me faut chercher et inventer des jeux pour occuper
-            mon groupe d'enfants.</p>
-    </article>
-</section>
-
-<section id="formation" class="color2">
-    <h2>Formations</h2>
-    <article class="formation">
-        <h3>Baccalauréat</h3>
-        <img src="src/PierreBayle.png" alt="Lycée Pierre Bayle">
-        <p>J'ai obtenu mon baccalauréat au lycée Pierre Bayle à Sedan dans les Ardennes, avec les spécialités NSI
-            (Numérique et Sciences Informatiques) et SES (Sciences Économiques et Sociales).</p>
-    </article>
-    <article class="formation">
-        <h3>BUT - Informatique</h3>
-        <img src="src/IUTA.png" alt="IUT de Lille">
-        <p>Je suis actuellement en 2ᵉ année de BUT Informatique à Villeneuve-d'Ascq, à l'IUT sur le campus de la
-            Cité Scientifique. Je suis en parcours A : réalisation d'applications - conception, développement,
-            validation.</p>
-    </article>
-</section>
-
-<section id="experience" class="color1">
-    <h2>Expériences</h2>
-    <article>
-        <h3>BDE</h3>
-        <img src="src/WhaleTrue.png" alt="Logo du BDE Whale(True)">
-        <p>Durant ma seconde année de BUT, j'ai fait partie du BDE informatique en tant que secrétaire. Nous avons
-            organisé divers événements pour divertir les étudiants et leur proposer des activités facilitant la vie
-            étudiante.</p>
-    </article>
-    <article>
-        <h3>Animateur ACM</h3>
-        <p>Je travaille comme animateur en centre d'accueil de mineurs pour la mairie de Sedan depuis trois ans
-            pendant les grandes vacances, ce qui m'a permis de devenir vif, attentif et capable de m'adapter à tout
-            type de public. Cela m'a aussi donné l'occasion d'établir des contacts humains enrichissants.</p>
-    </article>
-    <article>
-        <h3>Stage à venir</h3>
-        <img src="src/drapeauCanada.png" alt="Drapeau canadien">
-        <p>Dans le cadre de ma formation, j'ai l'opportunité de partir au Québec pour un stage dans l'entreprise
-            Createch. Ma mission sera d'automatiser le fonctionnement d'un logiciel de design 3D à l'aide de VBA
-            et Python.</p>
-    </article>
-</section>
-
-<section id="projets" class="color2">
-    <h2>Projets</h2>
-    <div class="carousels-container">
-        <!-- Projets Scolaires -->
-        <div class="carousel-wrapper">
-            <h3>Projets Scolaires</h3>
-            <div class="carousel" id="carousel-scolaire">
-                <button class="carousel-control prev" data-target="#carousel-scolaire">&lt;</button>
-                <div class="carousel-items">
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-front">
-                                <h3>Jeu Ludo-Pédagogique</h3>
-                                <img src="res/ludopeda.png" alt="Capture d'écran du jeu ludo-pédagogique">
-                            </div>
-                            <div class="card-back">
-                                <p>
-                                    Le jeu ludo-pédagogique est un projet dans lequel, par groupe de trois, nous avons créé
-                                    un jeu destiné aux enfants de fin primaire et début collège pour qu'ils apprennent en jouant.
-                                    Nous avions le choix du type de jeu à réaliser. Nous avons opté pour un RPG où il fallait battre
-                                    des gardes en répondant à leurs questions pour progresser dans une carte générée à partir d'un fichier CSV.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-front">
-                                <h3>Découverte de la méthode Agile</h3>
-                                <img src="res/agile.png" alt="Capture d'écran du projet Agile">
-                            </div>
-                            <div class="card-back">
-                                <p>
-                                    Nous avons eu une semaine sur le thème du framework Agile. Par groupe de cinq, nous avons
-                                    conçu un jeu avec cette méthode. Nous avons créé *Infinite Dungeons*, un jeu dans lequel
-                                    nous devions combattre des monstres au tour par tour et aller le plus loin possible.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-front">
-                                <h3>Base de données Parcoursup</h3>
-                                <img src="res/parcoursup.png" alt="Capture d'écran du projet Parcoursup">
-                            </div>
-                            <div class="card-back">
-                                <p>
-                                    Nous avons élaboré et réfléchi à l'implémentation d'une base de données à partir
-                                    d'un fichier CSV contenant des données issues de Parcoursup. Ensuite, nous avons établi un
-                                    rapport statistique répondant à diverses questions pour lier ce projet au cours de statistiques.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-front">
-                                <h3>Logiciel de classification</h3>
-                                <img src="res/classification.png" alt="Capture d'écran du logiciel de classification">
-                            </div>
-                            <div class="card-back">
-                                <p>
-                                    Nous avons réalisé un logiciel en JavaFX permettant de classifier un point à l'aide de
-                                    l'algorithme KNN. Diverses fonctionnalités ont été implémentées : génération de graphiques,
-                                    ajout de points, et choix des axes pour l'affichage des graphiques. Nous avons également relevé
-                                    le défi de rendre le logiciel générique.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control next" data-target="#carousel-scolaire">&gt;</button>
-            </div>
-        </div>
-
-        <!-- Séparateur vertical -->
-        <div class="separator"></div>
-
-        <!-- Projets Personnels -->
-        <div class="carousel-wrapper">
-            <h3>Projets Personnels</h3>
-            <div class="carousel" id="carousel-perso">
-                <button class="carousel-control prev" data-target="#carousel-perso">&lt;</button>
-                <div class="carousel-items">
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-front">
-                                <h3>Deck of Height</h3>
-                            </div>
-                            <div class="card-back">
-                                <img src="res/DeckHeight.png" alt="Capture d'écran du jeu Deck of Height">
-                                <p>
-                                    Jeu développé sur Godot en C#. Actuellement en cours de réalisation, il a été initié
-                                    lors de la game jam *Secret Santa 2024*. C'est un jeu d'escalade mêlant stratégie et narration
-                                    autour de l'ascension d'un personnage.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-front">
-                                <h3>Prochainement</h3>
-                            </div>
-                            <div class="card-back">
-                                <p>
-                                    Prochainement
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control next" data-target="#carousel-perso">&gt;</button>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#presentation">Donnet Ambroise ⬆</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#hard-skill">Hard Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#soft-skill">Soft Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#formation">Formations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#loisirs">Loisirs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
-</section>
+</nav>
 
-<section id="loisirs" class="color1">
-    <h2>Loisirs</h2>
-    <article>
-        <h3>Jeux vidéo</h3>
-        <p>Je suis un grand joueur de jeux vidéo tels que *League of Legends*, *Valorant*, *Marvel Snap*, *Minecraft*,
-            *Dofus*, *Hades 1 et 2*, ou *Apex Legends*. Je joue surtout pour discuter et passer du temps avec mes amis.</p>
-    </article>
+<!-- Contenu -->
+    <div class="container">
+        <section id="presentation" class="color1 container-fluid">
+            <h1>TEST !!</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div id="chat" class="d-flex flex-column gap-3">
+                        <!-- Les messages seront ajoutés ici par JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hard-skill">
+            <h2>Hard Skills</h2>
+            <div class="row g-3">
+                <article class="col-lg-6">
+                    <h3>Systèmes d'exploitation</h3>
+                    <div class="row g-2">
+                        <div class="col-6 text-center">
+                            <img src="res/autres/windows.png" alt="Logo Windows" class="custom-img img-thumbnail">
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="res/autres/logoDebian.png" alt="Logo Debian" class="custom-img img-thumbnail">
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-6 col-sm-12">
+                    <h3>Outils</h3>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <img src="res/autres/logo-git.png" alt="Logo Git" class="custom-img img-thumbnail">
+                        <img src="res/autres/vsc.png" alt="Logo VSCode" class="custom-img img-thumbnail">
+                        <img src="res/autres/JetBrains-Logo.wine.png" alt="Logo JetBrains" class="custom-img img-thumbnail">
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-lg-6 col-md-12 col-sm-12">
+                    <h3>Langues</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-sm-12 text-center">
+                                <img src="res/pays/drapAnglaiswebp.webp" alt="Drapeau anglais" class="custom-img img-thumbnail">
+                                <div class="progress ">
+                                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">B2</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-sm-12 text-center">
+                                <img src="res/pays/drapAllemand.webp" alt="Drapeau allemand" class="custom-img img-thumbnail">
+                                <div class="progress ">
+                                    <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">A2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="container">
+                        <h3 class="row">Langages de programmation</h3>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="res/logoLanguage/logo-html5.png" alt="Logo HTML 5" class="custom-img img-thumbnail">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="res/logoLanguage/logo-css3.png" alt="Logo CSS" class="custom-img img-thumbnail">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="res/logoLanguage/JavaLogo.wine.png" alt="Logo Java" class="custom-img img-thumbnail">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="res/logoLanguage/python.png" alt="Logo Python" class="custom-img img-thumbnail">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="res/logoLanguage/C_Programming_Language.png" alt="Logo C" class="custom-img img-thumbnail">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="res/logoLanguage/C_Sharp_Logo_2023.svg.png" alt="Logo C#" class="custom-img img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <article>
-        <h3>Développement</h3>
-        <p>Dans mon temps libre, je consacre une partie à la création de jeux. Récemment, j'ai commencé à
-            participer à des game jams, ce qui me permet de développer de manière moins formelle qu'en cours ou au
-            travail, tout en m'amusant.</p>
-    </article>
+        <section id="soft-skill">
+            <h2>Soft Skills</h2>
+            <article>
+                <h3>Travail d'équipe</h3>
+                <p>J'ai eu l'occasion de travailler en équipe sur de nombreux projets, tels que le jeu ludo-pédagogique
+                    *Infinite Dungeons* avec la méthode Agile.</p>
+            </article>
+            <article>
+                <h3>Autonomie et improvisation</h3>
+                <p>Je suis tout autant capable d'improviser lorsque nécessaire. J'exerce ces compétences principalement dans
+                    mes jobs étudiants en animation, où je dois m'adapter à chaque situation.</p>
+            </article>
+        </section>
 
-    <article>
-        <h3>Séries et films</h3>
-        <p>Je regarde quelques films et séries, principalement des productions connues comme *Umbrella Academy*,
-            *WandaVision*, *Heartstopper*, *Loki*, ou encore le film *Dune*.</p>
-    </article>
-</section>
+            <section id="formation">
+                <h2>Formations</h2>
+                <article class="formation">
+                    <h3>Baccalauréat</h3>
+                    <p>J'ai obtenu mon baccalauréat au lycée Pierre Bayle à Sedan dans les Ardennes, avec les spécialités NSI
+                        (Numérique et Sciences Informatiques) et SES (Sciences Économiques et Sociales).</p>
+                    <img src="res/autres/pierreBayle.gif" alt="Lycée Pierre Bayle" class="custom-img img-thumbnail">
+                </article>
+                <article class="formation">
+                    <h3>BUT - Informatique</h3>
+                    <p>Je suis actuellement en 2ᵉ année de BUT Informatique à Villeneuve-d'Ascq, à l'IUT sur le campus de la
+                        Cité Scientifique. Je suis en parcours A : réalisation d'applications - conception, développement,
+                        validation.</p>
+                    <img src="res/autres/logo-iut-lille-2022-pastille.png" alt="IUT de Lille" class="custom-img img-thumbnail">
 
-<footer id="contact" class="color2">
-    <h2>Me contacter</h2>
-    <p>Email : <a href="mailto:ambroise.donnet.pro@outlook.fr">ambroise.donnet.pro@outlook.fr</a></p>
-    <p><a href="res/CV_Ambroise_Donnet.pdf">Lien vers mon CV au format PDF</a></p>
-    <img src="res/logo-iut-lille-2022-pastille.png" alt="Logo de l'IUT de Lille">
-</footer>
-</body>
+                </article>
+            </section>
+
+            <section id="experience">
+                <h2>Expériences</h2>
+                <article>
+                    <h3>BDE</h3>
+                    <p>Durant ma seconde année de BUT, j'ai fait partie du BDE informatique en tant que secrétaire. Nous avons
+                        organisé divers événements pour divertir les étudiants et leur proposer des activités facilitant la vie
+                        étudiante.</p>
+                    <img src="res/autres/whaletrue.jpg" alt="Logo du BDE Whale(True)" class="custom-img img-thumbnail">
+                </article>
+                <article>
+                    <h3>Animateur ACM</h3>
+                    <p>Je travaille comme animateur en centre d'accueil de mineurs pour la mairie de Sedan depuis trois ans
+                        pendant les grandes vacances, ce qui m'a permis de devenir vif, attentif et capable de m'adapter à tout
+                        type de public. Cela m'a aussi donné l'occasion d'établir des contacts humains enrichissants.</p>
+                </article>
+                <article>
+                    <h3>Stage à venir</h3>
+                    <p>Dans le cadre de ma formation, j'ai l'opportunité de partir au Québec pour un stage dans l'entreprise
+                        Createch. Ma mission sera d'automatiser le fonctionnement d'un logiciel de design 3D à l'aide de VBA
+                        et Python.</p>
+                    <img src="res/pays/canada.png" alt="Drapeau canadien" class="custom-img img-thumbnail">
+                </article>
+            </section>
+
+            <section id="projets">
+                <h2>Projets</h2>
+                <p>Contenu des projets réalisés...</p>
+            </section>
+
+            <section id="loisirs">
+                <h2 id="contact">Loisirs</h2>
+                <article>
+                    <h3>Jeux vidéo</h3>
+                    <p>Je suis un grand joueur de jeux vidéo tels que *League of Legends*, *Valorant*, *Marvel Snap*, *Minecraft*,
+                        *Dofus*, *Hades 1 et 2*, ou *Apex Legends*. Je joue surtout pour discuter et passer du temps avec mes amis.</p>
+                </article>
+
+                <article>
+                    <h3>Développement</h3>
+                    <p>Dans mon temps libre, je consacre une partie à la création de jeux. Récemment, j'ai commencé à
+                        participer à des game jams, ce qui me permet de développer de manière moins formelle qu'en cours ou au
+                        travail, tout en m'amusant.</p>
+                </article>
+
+                <article>
+                    <h3>Séries et films</h3>
+                    <p>Je regarde quelques films et séries, principalement des productions connues comme *Umbrella Academy*,
+                        *WandaVision*, *Heartstopper*, *Loki*, ou encore le film *Dune*.</p>
+                </article>
+            </section>
+
+            <footer class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+                <div>
+                    <h2>Me contacter</h2>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Bouton GitHub -->
+                    <a href="https://github.com/" target="_blank" class="btn btn-outline-light" aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+                        <img src="res/autres/github-icon.png" alt="GitHub" style="width: 30px; height: 30px;">
+                    </a>
+                    <!-- Bouton LinkedIn -->
+                    <a href="https://linkedin.com/in/ambroise-donnet" target="_blank" class="btn btn-outline-light" aria-label="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                        <img src="res/autres/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;">
+                    </a>
+                    <!-- Bouton Email avec Popup -->
+                    <button class="btn btn-outline-light" id="email-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Copier l'email">
+                        <img src="res/autres/email.png" alt="Email" style="width: 30px; height: 30px;">
+                    </button>
+                    <div id="email-popup" class="position-absolute bg-dark text-white px-3 py-1 rounded" style="display: none; top: -50px; right: 0;">
+                        Email copié : ambroise.donnet.pro@outlook.fr
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script/contact.js"></script>
+    </body>
 </html>

@@ -1,0 +1,48 @@
+
+@import "contact";
+
+/* CSS personnalisé pour uniformiser les images */
+.custom-img {
+  width: 150px; /* Largeur fixe (ajuster si nécessaire) */
+  height: 150px; /* Hauteur fixe */
+  object-fit: contain; /* Les images s'adaptent sans déformation */
+}
+.img-thumbnail {
+  padding: 5px; /* Optionnel : ajuste les bordures */
+}
+
+html, body {
+  overflow-y: scroll;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 95vh;
+  padding-top: 8.5vh;
+  padding-bottom: 5vh;
+  scroll-snap-align: start;
+
+}
+
+
+@media (max-width: 600px) {
+  section {
+    height: auto;
+    width: 100%;
+    scroll-snap-align: none;
+  }
+}
+
+/* Styles pour les tablettes (écrans moyens : entre 601px et 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  section {
+    height: auto;
+    width: 100%;
+    scroll-snap-align: none;
+  }
+}
