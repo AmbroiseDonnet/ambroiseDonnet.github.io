@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Écrire un message lettre par lettre
     function typeMessage(message, callback) {
-        disableUserInteraction(); // Désactiver l'utilisateur pendant la saisie
+        // Désactiver l'utilisateur pendant la saisie
+        disableUserInteraction();
         inputField.value = ""; // Réinitialiser la zone de texte
         let charIndex = 0;
         const typingInterval = setInterval(() => {
@@ -62,22 +63,25 @@ document.addEventListener("DOMContentLoaded", () => {
                         addMessage(inputField.value, question);// Ajouter le message dans la conversation
                         question = true;
                     }
-                    inputField.value = ""; // Réinitialiser la zone de texte
-                    enableUserInteraction(); // Réactiver l'interactivité
+                    inputField.value = ""; // Réinitialiser la zone de texte// Réactiver l'interactivité
                     if (callback) callback(); // Passer au message suivant
                 }, avantEnvoie); // Attendre un peu avant d'ajouter le message
             }
         }, vitesse); // Délai entre chaque lettre
+        enableUserInteraction();
     }
 
     // Ajouter un message à l'interface
     function addMessage(content, isSelf = false) {
         const message = document.createElement("div");
         message.classList.add("message");
-        if (isSelf) message.classList.add("self");
+        if (isSelf){
+            message.classList.add("self");
+            typingInProgress = false;
+        }
         message.textContent = content;
         messagesDiv.appendChild(message);
-        messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll vers le bas
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;// Scroll vers le bas
     }
 
     // Lancer une conversation automatique
@@ -87,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
             typeMessage(predefinedMessages[messageIndex], () => {
                 messageIndex++;
                 typingInProgress = false; // Débloquer après le message
-                startAutoConversation(); // Passer au message suivant
             });
         }
     }
@@ -102,15 +105,16 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-
+    var indexChar = 0;
     inputField.addEventListener("keydown", (event) => {
-        if (!typingInProgress && event.key === "Enter") {
+        event.preventDefault();
+        if(indexChar < predefinedMessages[messageIndex].length) {
+            inputField.value += predefinedMessages[messageIndex][indexChar];
+            indexChar++;
+        }else if (!typingInProgress && event.key === "Enter") {
             sendButton.click();
         }
     });
-
-    // Lancer la conversation automatique dès le chargement
-    startAutoConversation();
 });
 
 const textarea = document.getElementById('message-input');
