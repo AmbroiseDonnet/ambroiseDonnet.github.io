@@ -28,7 +28,9 @@ section {
   padding-top: 8.5vh;
   padding-bottom: 5vh;
   scroll-snap-align: start;
-
+  h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+  }
 }
 
 

@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let messageIndex = 0;
     let typingInProgress = false;
     let question = true;
+    const avantEnvoie = 100;
+    const vitesse = 15;
 
     // Désactiver l'interactivité de l'utilisateur
     function disableUserInteraction() {
@@ -63,9 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     inputField.value = ""; // Réinitialiser la zone de texte
                     enableUserInteraction(); // Réactiver l'interactivité
                     if (callback) callback(); // Passer au message suivant
-                }, 500); // Attendre un peu avant d'ajouter le message
+                }, avantEnvoie); // Attendre un peu avant d'ajouter le message
             }
-        }, 20); // Délai entre chaque lettre
+        }, vitesse); // Délai entre chaque lettre
     }
 
     // Ajouter un message à l'interface

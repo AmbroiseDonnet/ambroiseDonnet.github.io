@@ -3,25 +3,88 @@ $themes: (
         "clair": (
                 bg-color: #ffffff,
                 bg-article-color: #f8f9fa,
-                border-color: #cccccc,
-                text1-color: #333333,
-                textmain-color: #000000
+                border-color: black,
+                text1-color: black,
+                textmain-color: #000000,
+                h2-bg-color: #F5F5F5,
+                h3-bg-color: lightgrey
         ),
         "fonce": (
                 bg-color: #121212,
                 bg-article-color: #1f1f1f,
-                border-color: #444444,
-                text1-color: #ffffff,
-                textmain-color: #e0e0e0
+                border-color: white,
+                text1-color: white,
+                textmain-color: #f5f5f5,
+                h2-bg-color: darkgrey,
+                h3-bg-color: grey
         ),
         "izaya": (
-                bg-color: #2b2d42,
-                bg-article-color: #8d99ae,
-                border-color: #ef233c,
-                text1-color: #edf2f4,
-                textmain-color: #d90429
+                bg-color: #BAA898,
+                bg-article-color: #EEE0CB,
+                border-color: white,
+                text1-color: black,
+                textmain-color: #f5f5f5,
+                h2-bg-color: #44534A,
+                h3-bg-color: #839788
+
         ),
-  // Ajouter d'autres thèmes ici...
+        "haru": (
+                bg-color: #BAA898,
+                bg-article-color: #EEE0CB,
+                border-color: white,
+                text1-color: black,
+                textmain-color: #f5f5f5,
+                h2-bg-color: #44534A,
+                h3-bg-color: #839788
+
+        ),
+        "kuu": (
+                bg-color: #BAA898,
+                bg-article-color: #EEE0CB,
+                border-color: white,
+                text1-color: black,
+                textmain-color: #f5f5f5,
+                h2-bg-color: #44534A,
+                h3-bg-color: #839788
+
+        ),
+        "automne": (
+                bg-color: #FFC15E,
+                bg-article-color: #F7B05B,
+                border-color: black,
+                text1-color: black,
+                textmain-color: black,
+                h2-bg-color: #CC5803,
+                h3-bg-color: #F7934C
+
+        ),"hiver": (
+                bg-color: #A2D2FF,
+                bg-article-color: #BDE0FE,
+                border-color: white,
+                text1-color: black,
+                textmain-color: black,
+                h2-bg-color: #FFAFCC,
+                h3-bg-color: #FFC8DD
+
+        ),"printemps": (
+                bg-color: #FEFAE0,
+                bg-article-color: #FAEDCD,
+                border-color: #D4A373,
+                text1-color: black,
+                textmain-color: black,
+                h2-bg-color: #CCD5AE,
+                h3-bg-color: #E9EDC9
+
+        ),"ete": (
+                bg-color: #F7B267,
+                bg-article-color: #F79D65,
+                border-color: black,
+                text1-color: black,
+                textmain-color: black,
+                h2-bg-color: #F25C54,
+                h3-bg-color: #F27059
+
+        ),
 );
 
 // Mixin pour générer les styles dynamiques
@@ -35,6 +98,15 @@ $themes: (
     border: 1px solid map-get($theme, border-color);
     color: map-get($theme, text1-color);
   }
+  section{
+    h2 {
+      background-color: map-get($theme, h2-bg-color);
+    }
+    h3 {
+      background-color: map-get($theme, h3-bg-color);
+    }
+  }
+
 }
 
 // Générer les classes pour chaque thème

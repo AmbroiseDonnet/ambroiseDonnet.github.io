@@ -12,7 +12,7 @@
 </head>
 <body data-spy="scroll" data-target="#navbar">
 <!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top rounded-bottom">
     <div class="container-fluid">
         <a class="navbar-brand" href="#presentation">Donnet Ambroise ⬆</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +34,12 @@
 
 <!-- Contenu -->
     <div class="container">
-        <section id="presentation" class="color1 container-fluid">
+        <section id="presentation" class="container-fluid">
             <div class="container">
                 <div class="d-flex justify-content-end py-2">
                     <select id="themeSelector" class="form-select w-auto">
                         <option value="clair">Clair</option>
-                        <option value="fonce">Foncé</option>
+                        <option value="fonce">Sombre</option>
                         <option value="izaya">Izaya</option>
                         <option value="haru">Haru</option>
                         <option value="kuu">Kuu</option>
@@ -55,7 +55,7 @@
                     <!-- Les messages apparaîtront ici -->
                 </div>
                 <div class="input-area">
-                    <textarea id="message-input" placeholder="Écrivez votre message ici..."></textarea>
+                    <label for="message-input"></label><textarea id="message-input" placeholder="Écrivez votre message ici..."></textarea>
                     <button id="send-button">Envoyer</button>
                 </div>
             </div>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section id="soft-skill" class="bg-light">
+        <section id="soft-skill">
             <h2 class="d-flex justify-content-center align-items-center">Soft Skills</h2>
             <article>
                 <h3>Travail d'équipe</h3>
@@ -302,7 +302,7 @@
                 <h2 id="contact" class="d-flex justify-content-center align-items-center">Loisirs</h2>
                 <article>
                     <h3>Jeux vidéo</h3>
-                    <p>Je suis un grand joueur de jeux vidéo tels que *League of Legends*, *Valorant*, *Marvel Snap*, *Minecraft*,
+                    <p>Je suis un grand joueur de jeux vidéo tels que *League of Legends*, *Valorant*, *Marvel Rivals*, *Minecraft*,
                         *Dofus*, *Hades 1 et 2*, ou *Apex Legends*. Je joue surtout pour discuter et passer du temps avec mes amis.</p>
                 </article>
 
