@@ -4,9 +4,11 @@ function createRain() {
     rainDrop.classList.add('rain');
 
     const leftPosition = Math.random() * window.innerWidth;
+    const topPosition = -Math.random() * window.innerHeight;
     const animationDuration = Math.random() * 2 + 1; // Between 1s and 3s
 
     rainDrop.style.left = `${leftPosition}px`;
+    rainDrop.style.top = `${topPosition}px`;
     rainDrop.style.animationDuration = `${animationDuration}s`;
 
     rainContainer.appendChild(rainDrop);
